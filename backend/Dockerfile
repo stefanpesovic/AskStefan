@@ -10,7 +10,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app/ app/
 COPY run.py .
 
-RUN mkdir -p data chroma_db
+COPY data/ data/
+RUN mkdir -p chroma_db
 
 EXPOSE 8000
 
