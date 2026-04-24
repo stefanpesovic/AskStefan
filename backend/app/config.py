@@ -27,7 +27,12 @@ class Settings(BaseSettings):
     LLM_MAX_TOKENS: int = 500
     MAX_RETRIES: int = 3
 
-    CORS_ORIGINS: list[str] = ["http://localhost:3000", "http://localhost:5173"]
+    CORS_ORIGINS: str = "http://localhost:3000,http://localhost:5173"
+
+    @property
+    def cors_origins_list(self) -> list[str]:
+        return [origin.strip() for origin in self.CORS_ORIGINS.split(",")]
+
     LOG_LEVEL: str = "INFO"
 
     VERSION: ClassVar[str] = "1.0.0"

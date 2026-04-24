@@ -14,4 +14,7 @@ RUN mkdir -p data chroma_db
 
 EXPOSE 8000
 
+HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
+    CMD curl -f http://localhost:${PORT:-8000}/health || exit 1
+
 CMD ["python", "run.py"]
