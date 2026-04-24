@@ -2,9 +2,10 @@ import { useEffect, useRef } from "react";
 import MessageBubble from "./MessageBubble";
 import EmptyState from "./EmptyState";
 import TypingIndicator from "./TypingIndicator";
+import ColdStartLoader from "./ColdStartLoader";
 import InputBox from "./InputBox";
 
-export default function ChatPanel({ messages, isLoading, onSend }) {
+export default function ChatPanel({ messages, isLoading, isFirstMessage, onSend }) {
   const bottomRef = useRef(null);
 
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function ChatPanel({ messages, isLoading, onSend }) {
             {messages.map((msg, i) => (
               <MessageBubble key={i} role={msg.role} content={msg.content} />
             ))}
-            {isLoading && <TypingIndicator />}
+            {isLoading && (isFirstMessage ? <ColdStartLoader /> : <TypingIndicator />)}
             <div ref={bottomRef} />
           </div>
         )}

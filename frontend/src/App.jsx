@@ -1,4 +1,5 @@
 import { useState } from "react";
+import WelcomeBanner from "./components/WelcomeBanner";
 import Header from "./components/Header";
 import SuggestedPrompts from "./components/SuggestedPrompts";
 import ChatPanel from "./components/ChatPanel";
@@ -6,12 +7,13 @@ import SourcePanel from "./components/SourcePanel";
 import useChat from "./hooks/useChat";
 
 function App() {
-  const { messages, currentSources, isLoading, lastQuery, sendMessage } = useChat();
+  const { messages, currentSources, isLoading, isFirstMessage, lastQuery, sendMessage } = useChat();
   const [showSources, setShowSources] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900/30 to-slate-900">
       <div className="mx-auto max-w-7xl px-4 py-4 flex flex-col h-screen">
+        <WelcomeBanner />
         <Header />
 
         <SuggestedPrompts onSelect={sendMessage} disabled={isLoading} />
@@ -21,6 +23,7 @@ function App() {
             <ChatPanel
               messages={messages}
               isLoading={isLoading}
+              isFirstMessage={isFirstMessage}
               onSend={sendMessage}
             />
           </div>

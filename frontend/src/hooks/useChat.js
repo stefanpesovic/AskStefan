@@ -7,6 +7,7 @@ export default function useChat() {
   const [currentSources, setCurrentSources] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [lastQuery, setLastQuery] = useState("");
+  const [isFirstMessage, setIsFirstMessage] = useState(true);
 
   const sendMessage = useCallback(
     async (text) => {
@@ -23,6 +24,7 @@ export default function useChat() {
         const assistantMessage = { role: "assistant", content: data.answer };
         setMessages((prev) => [...prev, assistantMessage]);
         setCurrentSources(data.sources);
+        setIsFirstMessage(false);
       } catch (err) {
         const status = err.response?.status;
 
@@ -50,5 +52,5 @@ export default function useChat() {
     [isLoading]
   );
 
-  return { messages, currentSources, isLoading, lastQuery, sendMessage };
+  return { messages, currentSources, isLoading, isFirstMessage, lastQuery, sendMessage };
 }
