@@ -13,7 +13,7 @@
 **LLM APIs** — Production experience with:
 - Anthropic Claude (API and via Claude Code)
 - OpenAI (ChatGPT API)
-- Groq (Llama 3.3 70B — used in AskStefan)
+- Groq (Llama 3.3 70B — used in AskStefan and VideoBrief)
 - Cohere (embeddings — used in AskStefan)
 
 **RAG Systems** — End-to-end pipeline experience (AskStefan project):
@@ -24,11 +24,20 @@
 - Retrieval with top-k similarity search
 - Citation-aware prompt engineering
 
+**LangGraph** — Multi-stage agent design with conditional routing (VideoBrief project):
+- 5-stage agent pipeline that autonomously decides which tools to run
+- Content-type-specific routing (tutorials, interviews, educational content)
+- Tool calling and specialized tool execution
+
 **AI Agents & Automation** — Multiple agents in production for personal use:
 - Marketing content generation (Instagram, TikTok)
 - Coding assistance
 - Trading signal analysis
 - Local-hosted agents with privacy constraints
+
+**Prompt Engineering & Tool Calling** — Designing structured prompts for LLMs, implementing tool calling patterns for agent systems, and building citation-aware retrieval prompts.
+
+**Vector Databases** — ChromaDB with persistent storage, metadata filtering, and similarity search.
 
 **Local AI Infrastructure** — Built and operate a dedicated AI server with RTX 5080 for running local LLMs, image generation, and custom agents without cloud dependencies.
 
@@ -45,17 +54,29 @@
 
 **API Integrations** — Real-world experience with Coinglass, Polymarket CLOB, Binance WebSockets, OpenAI, Anthropic, Groq, Cohere, payment gateways. I know how to connect systems and what to do when docs don't match reality.
 
-**Testing** — pytest with pytest-asyncio and respx for HTTP mocking. I write tests because they catch bugs before users do. Recent projects: 72 tests at 89% coverage (AIJobRadar), 88 tests total (AskStefan).
+**Testing** — pytest with pytest-asyncio and respx for HTTP mocking. I write tests because they catch bugs before users do. Portfolio total: 274+ tests across 3 production projects (137 in VideoBrief, 88 in AskStefan, 72 in AIJobRadar at 89% coverage).
 
 ## Frontend Development
 
-**React (daily)** — Functional components, hooks (useState, useEffect, useCallback, useMemo, custom hooks), context API, React Router.
+**React 18 (daily)** — Functional components, hooks (useState, useEffect, useCallback, useMemo, custom hooks), context API, React Router.
 
 **Angular (working knowledge)** — For projects that require it.
 
-**Styling** — TailwindCSS daily, glassmorphism patterns, responsive layouts (mobile-first when needed).
+**Styling** — TailwindCSS daily, glassmorphism UI patterns, responsive layouts (mobile-first when needed).
+
+**Animation & UI Libraries** — Framer Motion for animations, Lucide React for icons.
 
 **Build tools** — Vite (primary), some webpack experience.
+
+## Databases
+
+**MongoDB (daily)** — Document modeling, aggregation pipelines, indexing.
+
+**ChromaDB (vector)** — Vector storage with persistent client, metadata filtering, and similarity search for RAG systems.
+
+**SQLite** — For embedded persistence (used in PolymarketBTCbot for trade history and dynamic strategy weights).
+
+**SQL (basic)** — Comfortable with standard queries; could go deeper if a role requires it.
 
 ## DevOps & Deployment
 
@@ -63,21 +84,19 @@
 
 **CI/CD** — GitHub Actions for automated testing, linting, and deployment pipelines. Recent setup: ruff + black + pytest running on every push.
 
-**Deployment platforms** — Render (primary), familiar with the platform's quirks around environment variables, build commands, and service limits.
+**Deployment platforms** — Render (primary, live deployment at askstefan.onrender.com), familiar with the platform's quirks around environment variables, build commands, and service limits.
 
 **Version control** — Git daily, comfortable with branching strategies, rebasing, resolving merge conflicts, writing clean commit histories.
 
-## Databases
+## AI Development Tools
 
-**MongoDB (daily)** — Document modeling, aggregation pipelines, indexing.
+**Claude Code (daily driver)** — Primary tool for architecture, implementation, and testing workflows.
 
-**SQLite** — For embedded persistence (used in PolymarketBTCbot for trade history and dynamic strategy weights).
-
-**SQL (basic)** — Comfortable with standard queries; could go deeper if a role requires it.
+**Other tools** — Cursor, ChatGPT, local models on own GPU server.
 
 ## Rapid Prototyping
 
-**Streamlit and Gradio** — For fast AI demos and internal tools. I use these when I need to validate an idea quickly before committing to a full production stack.
+**Streamlit, Gradio, FastAPI + Swagger UI** — For fast AI demos and internal tools. I use these when I need to validate an idea quickly before committing to a full production stack.
 
 ## Methodology
 
@@ -85,9 +104,10 @@
 
 **Architect-first development** — I design the system before writing code. Define the contracts, data models, and interfaces; then the implementation falls out naturally.
 
+**Test-driven mindset** — 274+ tests across portfolio projects. Every project ships with comprehensive test suites covering backend logic, API endpoints, and frontend components.
+
 ## What I'm Learning Next
 
-- Deeper LangGraph for multi-step AI agents
 - Production-grade observability (Prometheus, Grafana)
 - Kubernetes basics (currently comfortable with Docker Compose; K8s is the logical next step)
 - Czech language (for potential relocation)
