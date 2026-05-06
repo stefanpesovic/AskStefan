@@ -2,9 +2,11 @@
 
 ## Who I Am
 
-I'm a self-taught AI developer with 3+ years of Python experience, specializing in building production-ready LLM systems: RAG pipelines, multi-stage agents with LangGraph, and full-stack AI applications. I don't just integrate APIs — I ship architected, tested, deployed products. My recent portfolio includes 3 production projects with 274+ tests, one with live deployment.
+I'm a full-stack software engineer with 3+ years of professional experience building production web applications, REST APIs, and AI-powered systems. I work end-to-end across the stack — Python/FastAPI on the backend, React/TypeScript on the frontend, with deep AI integration expertise (RAG, LangGraph, LLM orchestration) as my specialty.
 
-I'm based in Serbia with an open path to relocating to the Czech Republic.
+My portfolio includes a launched commercial SaaS (LingoDish — multilingual recipe platform with 50+ active restaurant clients), 3 production AI projects with 274+ tests and a live deployment, plus additional commercial full-stack work delivered to private clients (TypeScript fitness platform). I ship architected, tested, deployable software — not just demos.
+
+I'm based in Serbia / Czech Republic.
 
 ## Background
 
@@ -14,33 +16,25 @@ This combination turns out to be more useful than it sounds. Understanding the b
 
 ## How I Work
 
-I use Claude Code and modern AI-assisted development tools as my daily driver. This means I move faster than traditional developers while maintaining production quality — I architect the system, write acceptance criteria, and direct implementation, then review and test everything that ships. This workflow is what forward-looking teams are adopting in 2026.
+I use Claude Code and modern AI-assisted development tools as my daily driver. This means I architect first, write acceptance criteria, then direct implementation while reviewing every line. The result: production quality at higher velocity than traditional workflows. PSM I certified.
 
 What this means practically: I can move faster than developers who write every keystroke themselves, while maintaining code quality that holds up to review. The 274+ tests across my portfolio exist because I wrote the acceptance criteria and the test cases.
 
-Beyond client work, I run a local AI server built around an RTX 5080 GPU for privacy-focused agents, and I'm actively building commercial SaaS products (AI waiter platform for restaurants, multilingual recipe platform for foreign kitchen staff).
-
 ## Experience
 
-Freelance AI Developer — Self-Employed (2023 – Present, 3+ years)
+Freelance Full-Stack Developer — Self-Employed (2023 – Present, 3+ years)
 
-Building AI-powered applications and automation systems for personal projects and clients. Focus on LLM integration, RAG systems, AI agents, and production-grade backends with FastAPI and modern frontend stacks. Also active in crypto trading, where I build agents that track markets, analyze data, and execute strategies.
+Building full-stack web applications and AI-powered systems for personal projects and commercial clients. Backend work in Python/FastAPI, frontend in React/TypeScript, with deep AI integration when projects require it (RAG, agents, LLM orchestration). End-to-end ownership: requirements → architecture → implementation → deployment.
 
-- 3 production AI projects with 274+ tests across full stack
-- Delivered commercial fitness SaaS (TypeScript + React) to private client
-- Active development on AI waiter platform and multilingual recipe SaaS
-- Daily work with Claude Code for architecture, implementation, and testing
+- Launched and operate LingoDish — full-stack SaaS serving 50+ restaurants across Europe
+- Delivered Apex Fitness — full-stack TypeScript/React platform for private client (paid)
+- 3 production AI projects with 274+ tests across full stack (one live)
+- Active development on Best Guest AI waiter platform
+- Daily work with Claude Code for architecture, implementation, and code review
 
 ## What I'm Looking For
 
-My first formal position in AI. I'm ready for remote work with international companies — my English is B2-C1, I'm comfortable async, and my timezone (Central European) works for teams in Europe, UK, and the US East Coast.
-
-I'm open to roles across the AI and backend spectrum:
-- **AI/ML Engineer** — working with LLMs, RAG systems, agents, and production AI pipelines
-- **Backend Python Developer** — FastAPI, async services, API design, distributed systems
-- **Full-Stack Developer** — Python on the backend with React on the frontend
-
-What matters more than the exact title is working on systems that solve real problems, with a team that values shipping and quality equally.
+Looking for my first formal engineering position — remote-friendly, international companies, Central European timezone. Open to Software Engineer, Backend Developer, Full-Stack Developer, or AI/ML Engineer roles. Junior to mid-level positions where I can contribute production code from day one and grow with a strong team.
 
 ## Education
 

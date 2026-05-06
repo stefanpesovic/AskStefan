@@ -1,6 +1,37 @@
 # Projects
 
-## Featured Open-Source Projects
+## Commercial Project Delivery
+
+### LingoDish — Multilingual Recipe SaaS Platform (LIVE — 50+ active restaurants)
+Full-Stack Founder & Engineer — Live commercial SaaS
+
+Built and launched a production SaaS web application solving a real hospitality problem: foreign kitchen staff who don't know local dish preparation standards. Restaurants subscribe and get a digital recipe book with ingredients, plating techniques, and step-by-step images translated across 12+ languages. Currently serving 50+ active restaurants across Europe (Czech Republic, Austria, Serbia, and more) with multiple subscription tiers and 24-hour onboarding time.
+
+**Key achievements:**
+- End-to-end ownership: product, architecture, frontend, backend, deployment, marketing site, sales
+- 12+ languages supported (English, Hindi, Nepali, Czech, German, Romanian, Vietnamese, etc.)
+- Tiered subscription plans (Starter, Pro, Enterprise) with proportional upgrades
+- Kiosk-style interface optimized for kitchen monitors — no scrolling required
+
+**Tech stack:** TypeScript, React, FastAPI backend, multi-language translation, kiosk-optimized UI, subscription management, marketing site
+
+**Live Site:** www.lingodish.com
+
+### Apex Fitness — Full-Stack Web Platform (Delivered to Client)
+Full-Stack Developer — Commercial project, delivered and paid
+
+Built and delivered a complete full-stack web platform for a private fitness business. The platform handles member management, workout scheduling, and business operations. Delivered as a paid commercial engagement.
+
+**Key achievements:**
+- End-to-end delivery: requirements gathering, architecture, implementation, deployment
+- Worked directly with the client to refine features through multiple iterations
+- Successfully deployed and handed over to client for ongoing operation
+
+**Tech stack:** TypeScript, React, modern frontend tooling, REST API backend, deployed for production use
+
+---
+
+## AI Portfolio Projects
 
 ### VideoBrief — AI-Powered YouTube Summarizer with LangGraph Agent
 Full-Stack AI Developer — Day 3 of 5-Day AI Developer Challenge
@@ -10,7 +41,6 @@ Paste any YouTube URL and get a structured markdown report with key takeaways, c
 **Key achievements:**
 - Multi-stage LangGraph agent with conditional routing based on content type
 - 137 tests (63 backend + 74 frontend), full CI/CD with GitHub Actions
-- Glassmorphism UI with Hero, Feature Cards, Video Preview, and Staged Loader
 - Adaptive reports: tutorial vs. interview vs. educational content get different structures
 
 **Tech stack:** Python, FastAPI, LangGraph, Groq (Llama 3.3 70B), youtube-transcript-api, React 18, Vite, TailwindCSS, Framer Motion, Docker
@@ -37,58 +67,28 @@ The chatbot you're currently talking to. A production RAG (Retrieval-Augmented G
 ### AIJobRadar — Real-Time AI/ML Job Scraper REST API
 Backend Developer — Day 1 of 5-Day AI Developer Challenge
 
-A production-grade REST API that scrapes real-time AI/ML job listings from RemoteOK, WeWorkRemotely, and Hacker News, normalizes them into a unified schema, and serves them via a FastAPI backend.
+A production-grade REST API that scrapes real-time AI/ML job listings from RemoteOK, WeWorkRemotely, and Hacker News, normalizes them into a unified schema, and serves them via a FastAPI backend. Async scraping completes all 3 sites in 1.4 seconds.
 
 **Key achievements:**
 - 72 tests, 89% code coverage
 - Async scraping with httpx — 3 sites scraped in 1.4 seconds
-- Word-boundary regex filter solving substring false-positive bug (reduced 201 raw jobs to 39 genuinely AI-relevant listings)
-- Docker containerized with GitHub Actions CI
 - JSON cache with TTL for efficient re-querying
 
-**Tech stack:** Python 3.11, FastAPI, httpx, BeautifulSoup, Pydantic v2, pytest, Docker
+**Tech stack:** Python 3.11, FastAPI, httpx (async), BeautifulSoup, Pydantic v2, pytest, Docker, GitHub Actions
 
 **Repository:** https://github.com/stefanpesovic/AIJobRadar
 
 ---
 
-## Commercial & Private Projects
+## Additional Projects
 
-The following projects are in private repositories because they are either commercial products or under active development for paying clients or personal ventures. Full code access available upon request via direct contact.
-
-### Best Guest — AI Waiter Platform for Restaurants (Active Development)
-A restaurant platform where guests scan a QR code at their table and interact with an AI agent acting as a waiter. The agent knows the full menu, ingredients, allergens, can recommend dishes, answer questions about the restaurant, and process orders and payments directly through chat. Currently under active development.
+### Best Guest — AI Waiter Platform (Active Development)
+Restaurant platform where guests scan a QR code at their table and interact with an AI agent acting as a waiter. The agent knows the menu, ingredients, allergens, recommends dishes, and processes orders and payments directly through chat.
 
 **Tech stack:** Python, FastAPI, React, AI agents, payment integration, real-time chat
 
-### Kitchen Flow — Multilingual Recipe SaaS (In Sales)
-A SaaS web application solving a real hospitality problem: foreign kitchen staff who don't know local dish preparation standards. Restaurants subscribe and get a digital recipe book with ingredients, plating techniques, and step-by-step images, all translated across multiple languages. New staff can be onboarded in days instead of weeks. Built and tested; currently in sales conversations with restaurants.
-
-**Tech stack:** TypeScript, React, backend API, multi-language translation
-
-### PolymarketBTCbot — Autonomous Trading System (Paper Testing)
-An algorithmic trading bot for 5-minute binary prediction markets on Polymarket (BTC/ETH/SOL up-down). Uses an 11-strategy ensemble voting system with 3 mathematical risk gates (microstructure, execution feasibility, Kelly sizing) and full SQLite persistence. Currently in paper-testing phase.
-
-**Architecture highlights:**
-- Async Python pipeline with market discovery, timing gates, and orderbook analysis
-- TIER_1/TIER_2/INFO_ONLY strategy classification with weighted voting
-- Asymmetric Kelly criterion for binary payouts
-- Break-even WR mathematical framework with safety margins
-- 120+ tests covering strategy logic and risk gates
-
-**Tech stack:** Python 3.11, async/await, py-clob-client, Binance WebSockets, pandas, SQLite, pytest
-
-### Apex Fitness — Personal Training Platform (Delivered to Client)
-A web application where users purchase customized training and nutrition plans, receiving daily workouts and meals adapted to their goals. Project delivered and sold to a private client; currently in production.
-
-**Tech stack:** TypeScript, React, backend API, payment integration
-
 ### Local AI Server — RTX 5080 Infrastructure
-Built a dedicated AI server around an RTX 5080 GPU for running local models with full data privacy and zero recurring API costs. Hosts multiple custom agents:
-- Marketing content generator (Instagram, TikTok)
-- Coding assistant
-- Image generation without cloud dependencies
-- Task-specific agents for various personal workflows
+Built a dedicated AI server around an RTX 5080 GPU for running local models with full data privacy and zero recurring API costs. Hosts multiple custom agents: marketing content generator, coding assistant, image generation, and task-specific agents.
 
 **Tech stack:** Local LLM deployment, CUDA, Python agents, custom integrations
 
@@ -96,4 +96,4 @@ Built a dedicated AI server around an RTX 5080 GPU for running local models with
 
 ## Development Philosophy
 
-I learn by building. Whenever I encounter a new tool or concept, my first instinct is to drop it into a project and see where it breaks. Explaining things to others is how I end up understanding them better myself. Every project listed above taught me something specific — the AIJobRadar substring bug taught me the importance of regex boundaries, the PolymarketBTCbot taught me mathematical rigor in financial systems, AskStefan taught me the full RAG pipeline from embeddings to citation UI, and VideoBrief taught me multi-stage LangGraph agent design with conditional routing.
+I learn by building. Whenever I encounter a new tool or concept, my first instinct is to drop it into a project and see where it breaks. Every project listed above taught me something specific — AIJobRadar taught me async scraping patterns, AskStefan taught me the full RAG pipeline from embeddings to citation UI, and VideoBrief taught me multi-stage LangGraph agent design with conditional routing.
